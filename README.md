@@ -1,5 +1,7 @@
 # Cognition Store
 
+![Cognition Store social preview](./assets/social-preview.png)
+
 Cognition Store is a local-first evidence, graph, and simulation engine for agent systems. It turns approved local documents into evidence items, typed claims, lightweight knowledge graphs, persona panels, event logs, and machine-readable verdicts.
 
 The project is designed for teams that need auditable decision support without sending private context to an external memory service.
