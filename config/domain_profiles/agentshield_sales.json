@@ -1,0 +1,24 @@
+{
+  "domain": "agentshield_sales",
+  "default_rounds": 4,
+  "persona_roles": [
+    "CEO",
+    "IT Lead",
+    "Security Reviewer",
+    "Finance Controller",
+    "Operations Manager",
+    "Procurement Officer",
+    "Compliance Reviewer",
+    "Skeptical Department User",
+    "External IT Vendor"
+  ],
+  "decision_dimensions": [
+    "urgency",
+    "trust",
+    "budget",
+    "technical_fit",
+    "implementation_risk",
+    "compliance_value"
+  ]
+}
+

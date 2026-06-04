@@ -1,0 +1,23 @@
+{
+  "domain": "energy_crude_oil",
+  "default_rounds": 6,
+  "persona_roles": [
+    "Crude Buyer",
+    "Product Seller",
+    "Logistics Coordinator",
+    "Depot Operator",
+    "Compliance Officer",
+    "Finance Reviewer",
+    "Market Analyst",
+    "Counterparty Trust Assessor"
+  ],
+  "decision_dimensions": [
+    "buyer_urgency",
+    "seller_pressure",
+    "payment_risk",
+    "logistics_risk",
+    "regulatory_risk",
+    "timing_window"
+  ]
+}
+

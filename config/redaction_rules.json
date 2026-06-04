@@ -1,0 +1,14 @@
+{
+  "secret_markers": [
+    "api_key",
+    "apikey",
+    "secret",
+    "token",
+    "password",
+    "private key",
+    "bearer ",
+    "sk-"
+  ],
+  "replacement": "[REDACTED]"
+}
+
