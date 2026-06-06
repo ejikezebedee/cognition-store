@@ -17,6 +17,7 @@ Prepared and reviewed the public Cognition Store repository for open-source rele
 - Added public README, security policy, contribution guide, issue templates, and pull request template.
 - Added public example folders for standard B2B sales and market compliance scenarios.
 - Added v0.2.0 public polish: product positioning, roadmap, examples gallery, dev test extras, and CI workflow.
+- Added v0.3.0 SaaS-readiness materials: common-user onboarding, SaaS blueprint, static dashboard prototype, and commercial release notes.
 
 ## Sanitization Rules
 
@@ -39,7 +40,7 @@ Scanned for:
 - Python bytecode and cache scan: passed after cleanup.
 - Smoke test: passed.
 - Compile check: passed.
-- Pytest: enabled through the `dev` extra.
+- Pytest: passed.
 
 ## Release Gate
 

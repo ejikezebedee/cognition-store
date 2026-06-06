@@ -2,7 +2,7 @@
 
 ## Status
 
-Public v0.2.0 polish package prepared for the Cognition Store repository.
+Public v0.3.0 SaaS-readiness package prepared for the Cognition Store repository.
 
 ## Delivered
 
@@ -21,12 +21,16 @@ Public v0.2.0 polish package prepared for the Cognition Store repository.
 - Product positioning guide
 - Examples gallery
 - Public roadmap
+- Common-user onboarding guide
+- SaaS blueprint
+- Static dashboard prototype
+- v0.3.0 release notes
 
 ## Verification
 
 - Smoke test: passed
 - Compile check: passed
-- Pytest: available through `pip install -e ".[dev]"`
+- Pytest: passed
 - Internal reference scan: passed
 - Private path scan: passed
 - Token/IP/email scan: no actionable private finding

@@ -1,6 +1,6 @@
 # Product Positioning
 
-Cognition Store helps agent builders keep memory, evidence, and simulation output reviewable. It is built for teams that want local-first reasoning traces instead of opaque cloud memory.
+Cognition Store helps agent builders and business teams keep memory, evidence, and simulation output reviewable. It is built for teams that want local-first reasoning traces instead of opaque cloud memory.
 
 ## Buyer Pain Point
 
@@ -36,6 +36,21 @@ Cognition Store turns that flow into local files that can be audited.
 
 Cognition Store gives users a structured way to turn local documents into evidence, claims, graphs, simulation traces, and verdicts. It does not replace human judgment. It makes the reasoning trail easier to inspect before a person decides what to do next.
 
+For non-technical users, the product should be explained as:
+
+> A business memory system that stores important notes, AI work, decisions, sources, risks, and lessons so a person can review what happened and reuse the knowledge later.
+
+## Common User Promise
+
+The commercial SaaS version should make the engine usable without developer setup:
+
+- a browser dashboard instead of command-line commands
+- guided project setup instead of technical configuration
+- templates for business notes, AI work logs, client decisions, compliance records, and research notes
+- clear record pages that show sources, decisions, risks, and next actions
+- one-click export for reports and audit trails
+- team review controls for approval-sensitive work
+
 ## Suggested Positioning
 
 Title:
@@ -48,4 +63,4 @@ Short description:
 
 Audience:
 
-> Developers, compliance teams, AI consultants, and operators building agent systems that need transparent memory and decision-support artifacts.
+> Developers, compliance teams, AI consultants, operators, founders, researchers, and business owners who need transparent memory and decision-support artifacts.

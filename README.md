@@ -2,9 +2,24 @@
 
 ![Cognition Store social preview](./assets/social-preview.png)
 
-Cognition Store is a local-first evidence, graph, and simulation engine for agent systems. It turns approved local documents into evidence items, typed claims, lightweight knowledge graphs, persona panels, event logs, and machine-readable verdicts.
+Cognition Store is a local-first evidence, memory, and decision record system for AI-assisted work. It turns approved notes, documents, and task summaries into evidence items, typed claims, lightweight knowledge graphs, persona panels, event logs, and machine-readable verdicts.
 
-The project is designed for teams that need auditable decision support without sending private context to an external memory service.
+The project is designed for teams that need auditable decision support without sending private context to an external memory service. The open-source engine runs locally today, while the v0.3.0 product layer defines how it can become a common-user SaaS with a dashboard, guided workflows, templates, exports, and team review.
+
+## Common User Version
+
+In plain language, Cognition Store helps people keep a clean record of important thinking, decisions, AI work, source notes, and lessons learned.
+
+The SaaS direction is built for users who do not want a command line:
+
+- create a workspace from a browser
+- paste or upload notes
+- choose a simple template
+- save memory records
+- see decisions, risks, sources, and lessons in one place
+- export a clean report for review or sharing
+
+See [docs/common-user-onboarding.md](docs/common-user-onboarding.md) and the static prototype in [prototypes/saas-dashboard](prototypes/saas-dashboard).
 
 ## Who Needs This
 
@@ -115,9 +130,11 @@ See [docs/examples-gallery.md](docs/examples-gallery.md) for a fuller walkthroug
 
 ## Product Positioning
 
-Cognition Store is not a chatbot and not an autonomous executor. It is infrastructure for agent systems that need a local reasoning record: evidence in, claims and graphs in the middle, reviewable verdicts out.
+Cognition Store is not a chatbot and not an autonomous executor. It is infrastructure for agent systems and business teams that need a local reasoning record: evidence in, claims and graphs in the middle, reviewable verdicts out.
 
 For commercial or internal adoption notes, see [docs/product-positioning.md](docs/product-positioning.md).
+
+For the SaaS upgrade path, see [docs/saas-blueprint.md](docs/saas-blueprint.md).
 
 For planned upgrades, see [ROADMAP.md](ROADMAP.md).
 

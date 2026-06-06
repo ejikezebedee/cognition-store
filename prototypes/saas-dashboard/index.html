@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognition Store Dashboard Prototype</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <div class="brand">
+        <span class="brand-mark">CS</span>
+        <div>
+          <strong>Cognition Store</strong>
+          <small>Memory desk</small>
+        </div>
+      </div>
+      <nav>
+        <a class="active" href="#overview">Overview</a>
+        <a href="#new-record">New record</a>
+        <a href="#templates">Templates</a>
+        <a href="#reports">Reports</a>
+        <a href="#review">Review queue</a>
+      </nav>
+      <button class="upgrade-button" type="button">Start Pro Trial</button>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Workspace</p>
+          <h1>Business Memory</h1>
+        </div>
+        <div class="top-actions">
+          <button class="ghost" type="button">Export</button>
+          <button class="primary" type="button">New Memory Record</button>
+        </div>
+      </header>
+
+      <section class="hero-panel" id="overview">
+        <div>
+          <p class="eyebrow">Today</p>
+          <h2>Turn scattered notes into reviewable decisions.</h2>
+          <p>
+            Paste approved notes, select a template, and save a clean memory record with sources,
+            key points, risks, lessons, and a report export.
+          </p>
+        </div>
+        <div class="scorecard" aria-label="Workspace summary">
+          <span>Records saved</span>
+          <strong>42</strong>
+          <small>8 require human review</small>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel" id="new-record">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Guided setup</p>
+              <h2>Create a memory record</h2>
+            </div>
+            <span class="badge">5 min</span>
+          </div>
+          <label>
+            What are you saving?
+            <select>
+              <option>Project decision</option>
+              <option>AI work log</option>
+              <option>Client consultation</option>
+              <option>Compliance review</option>
+              <option>Research notes</option>
+            </select>
+          </label>
+          <label>
+            Paste approved notes
+            <textarea placeholder="Paste notes, meeting summary, AI output, or source text..."></textarea>
+          </label>
+          <button class="primary wide" type="button">Generate Review</button>
+        </article>
+
+        <article class="panel review-card">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Latest review</p>
+              <h2>Expansion planning notes</h2>
+            </div>
+            <span class="status">Ready</span>
+          </div>
+          <ul class="review-list">
+            <li><span>Source notes</span><strong>6</strong></li>
+            <li><span>Key points</span><strong>18</strong></li>
+            <li><span>Risks found</span><strong>3</strong></li>
+            <li><span>Lessons saved</span><strong>5</strong></li>
+          </ul>
+          <button class="ghost wide" type="button">Open Review Result</button>
+        </article>
+      </section>
+
+      <section class="panel" id="templates">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Templates</p>
+            <h2>Start with the right record type</h2>
+          </div>
+          <button class="ghost" type="button">Manage</button>
+        </div>
+        <div class="template-grid">
+          <button type="button">AI Work Log</button>
+          <button type="button">Business Decision</button>
+          <button type="button">Client Notes</button>
+          <button type="button">Research Review</button>
+          <button type="button">Compliance Check</button>
+          <button type="button">Sales Opportunity</button>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel" id="reports">
+          <p class="eyebrow">Reports</p>
+          <h2>One-click exports</h2>
+          <p class="muted">Generate a clean summary, evidence trail, and approval notes for sharing.</p>
+          <div class="button-row">
+            <button class="ghost" type="button">PDF</button>
+            <button class="ghost" type="button">JSON</button>
+            <button class="ghost" type="button">Markdown</button>
+          </div>
+        </article>
+
+        <article class="panel" id="review">
+          <p class="eyebrow">Human review</p>
+          <h2>Approval required</h2>
+          <p class="muted">Sensitive actions stay as draft recommendations until a person approves them.</p>
+          <div class="approval-line">
+            <span>Pending review</span>
+            <strong>8</strong>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

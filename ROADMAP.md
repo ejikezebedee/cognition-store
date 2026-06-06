@@ -10,7 +10,15 @@ Cognition Store is developed as a local-first cognition layer for agent systems 
 - Public example gallery explaining generated artifacts.
 - Updated release audit language for the published repository state.
 
-## v0.3.0 - Stronger Developer Workflow
+## v0.3.0 - SaaS-Ready Product Layer
+
+- Add common-user product positioning.
+- Add SaaS blueprint for dashboard, backend, auth, billing, storage, and deployment.
+- Add static dashboard prototype for non-technical user workflows.
+- Add onboarding language that explains the product without developer terms.
+- Add commercial release audit notes for the SaaS-readiness milestone.
+
+## v0.4.0 - Stronger Developer Workflow
 
 - Add richer command examples for each supported domain.
 - Add optional export formats for summaries and verdicts.
@@ -18,7 +26,7 @@ Cognition Store is developed as a local-first cognition layer for agent systems 
 - Add configurable evidence schemas for new domains.
 - Add packaging guidance for PyPI distribution.
 
-## v0.4.0 - Team Review Layer
+## v0.5.0 - Team Review Layer
 
 - Add reviewer-friendly report templates.
 - Add run comparison utilities.

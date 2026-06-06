@@ -19,5 +19,9 @@
 - [x] Product positioning guide added.
 - [x] Examples gallery added.
 - [x] Roadmap added.
+- [x] SaaS blueprint added.
+- [x] Common-user onboarding guide added.
+- [x] Static dashboard prototype added.
+- [x] v0.3.0 commercial release notes added.
 
 Future release tags and package distributions should pass the same checklist before publication.

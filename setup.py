@@ -3,8 +3,8 @@ from setuptools import find_packages, setup
 
 setup(
     name="cognition-store",
-    version="0.2.0",
-    description="Local-first evidence, graph, and simulation engine for agent systems",
+    version="0.3.0",
+    description="Local-first evidence, memory, and SaaS-ready decision record system",
     packages=find_packages(include=["cognition_store", "cognition_store.*"]),
     python_requires=">=3.10",
     extras_require={"dev": ["pytest>=8.0"]},
