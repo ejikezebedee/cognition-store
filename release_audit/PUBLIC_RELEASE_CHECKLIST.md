@@ -1,7 +1,6 @@
 # Public Release Checklist
 
-- [x] Public staging package created locally only.
-- [x] No remote repository initialized or pushed.
+- [x] Public repository available.
 - [x] Apache-2.0 license included.
 - [x] Public README written with install, examples, architecture, outputs, and verification.
 - [x] `SECURITY.md` added.
@@ -15,6 +14,10 @@
 - [x] Final compile check completed.
 - [x] Final sanitization scan completed.
 - [x] Python bytecode caches removed after compile verification.
-- [x] `pytest` checked; unavailable in the local runtime.
+- [x] `pytest` available through `pip install -e ".[dev]"`.
+- [x] GitHub Actions CI added.
+- [x] Product positioning guide added.
+- [x] Examples gallery added.
+- [x] Roadmap added.
 
-Publication remains blocked until explicit human review and separate publish approval.
+Future release tags and package distributions should pass the same checklist before publication.

@@ -1,16 +1,14 @@
 # Sanitization Trace Ledger
 
-Package: `public-downloads/cognition-store`
-
 Date: 2026-06-04
+Updated: 2026-06-06
 
 ## Scope
 
-Prepared a GitHub-ready local staging package from the internal cognition engine. No remote repository was initialized, pushed, or published.
+Prepared and reviewed the public Cognition Store repository for open-source release hygiene. The review focused on portable documentation, synthetic examples, public-safe language, and the absence of private paths or credential material.
 
 ## Actions
 
-- Created a separate public staging directory.
 - Excluded generated run artifacts and Python bytecode caches.
 - Renamed the import package from the internal name to `cognition_store`.
 - Replaced public-facing internal product references with neutral Cognition Store language.
@@ -18,6 +16,7 @@ Prepared a GitHub-ready local staging package from the internal cognition engine
 - Added Apache-2.0 project metadata.
 - Added public README, security policy, contribution guide, issue templates, and pull request template.
 - Added public example folders for standard B2B sales and market compliance scenarios.
+- Added v0.2.0 public polish: product positioning, roadmap, examples gallery, dev test extras, and CI workflow.
 
 ## Sanitization Rules
 
@@ -40,8 +39,8 @@ Scanned for:
 - Python bytecode and cache scan: passed after cleanup.
 - Smoke test: passed.
 - Compile check: passed.
-- Pytest: unavailable in local runtime.
+- Pytest: enabled through the `dev` extra.
 
-## External Gate
+## Release Gate
 
-Public release is not authorized by this package. Publishing requires a separate explicit approval.
+The repository is public. Future releases should still pass smoke tests, compile checks, pytest, and the private-reference scan before publishing tags or package distributions.

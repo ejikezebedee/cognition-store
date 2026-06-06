@@ -6,6 +6,23 @@ Cognition Store is a local-first evidence, graph, and simulation engine for agen
 
 The project is designed for teams that need auditable decision support without sending private context to an external memory service.
 
+## Who Needs This
+
+- AI agent builders who need inspectable memory artifacts.
+- Security and compliance teams reviewing AI-assisted recommendations.
+- Consultants who need evidence-backed client reports from approved notes.
+- Operators who want task completion logs, reusable lessons, and approval-aware recommendations.
+- Product teams testing buyer, market, or workflow scenarios before making real-world decisions.
+
+## Where It Can Be Used
+
+- local developer tools and agent workbenches
+- private knowledge-base systems
+- compliance and audit review workflows
+- sales-readiness and buyer-committee simulations
+- market-risk research workflows
+- defensive automation products that need human approval gates
+
 ## What It Does
 
 - Indexes local Markdown and text files as redacted evidence.
@@ -43,6 +60,12 @@ pip install -e .
 ```
 
 No third-party runtime dependency is required for the core demos.
+
+For development and tests:
+
+```bash
+pip install -e ".[dev]"
+```
 
 ## Quick Start
 
@@ -88,6 +111,16 @@ Each run writes artifacts under `artifacts/runs/<run-id>/`:
 - `verdict.json`: decision-support result and risk notes
 - `summary.json`: concise run summary
 
+See [docs/examples-gallery.md](docs/examples-gallery.md) for a fuller walkthrough of the demo outputs.
+
+## Product Positioning
+
+Cognition Store is not a chatbot and not an autonomous executor. It is infrastructure for agent systems that need a local reasoning record: evidence in, claims and graphs in the middle, reviewable verdicts out.
+
+For commercial or internal adoption notes, see [docs/product-positioning.md](docs/product-positioning.md).
+
+For planned upgrades, see [ROADMAP.md](ROADMAP.md).
+
 ## Development
 
 ```bash
@@ -95,11 +128,11 @@ python3 scripts/smoke_test.py
 python3 -m compileall cognition_store scripts
 ```
 
-If `pytest` is installed:
-
 ```bash
 pytest
 ```
+
+GitHub Actions runs the same smoke, compile, and pytest checks on pushes and pull requests.
 
 ## License
 
