@@ -10,6 +10,7 @@ from cognition_store.domains.agentshield.buyer_simulator import run_buyer_simula
 from cognition_store.domains.energy.market_simulation import run_energy_demo
 from cognition_store.domains.energy.market_simulation import run_energy_from_documents
 from cognition_store.runtime.task_hook import run_task_completion_hook
+from cognition_store.web_app import serve
 
 
 def main() -> int:
@@ -44,6 +45,11 @@ def main() -> int:
     runtime.add_argument("--output", type=Path, default=Path("artifacts/runs"))
     runtime.add_argument("--run-id", default="runtime_completion")
 
+    web = sub.add_parser("serve", help="Run the local full-stack dashboard and JSON API")
+    web.add_argument("--host", default="127.0.0.1")
+    web.add_argument("--port", type=int, default=8765)
+    web.add_argument("--output", type=Path, default=Path("artifacts/runs"))
+
     args = parser.parse_args()
     if args.command == "agentshield-demo":
         print(json.dumps(run_demo(args.output), ensure_ascii=False, indent=2))
@@ -62,6 +68,9 @@ def main() -> int:
         return 0
     if args.command == "runtime-complete":
         print(json.dumps(run_task_completion_hook(args.summary, args.project, args.output, args.run_id), ensure_ascii=False, indent=2))
+        return 0
+    if args.command == "serve":
+        serve(args.host, args.port, output_root=args.output)
         return 0
     return 1
 

@@ -2,7 +2,7 @@
 
 ![Cognition Store social preview](./assets/social-preview.png)
 
-Cognition Store is a local-first evidence, memory, and decision record system for AI-assisted work. It turns approved notes, documents, and task summaries into evidence items, typed claims, lightweight knowledge graphs, persona panels, event logs, and machine-readable verdicts.
+Cognition Store is a local-first evidence, memory, dashboard, and decision record system for AI-assisted work. It turns approved notes, documents, and task summaries into evidence items, typed claims, lightweight knowledge graphs, persona panels, event logs, machine-readable verdicts, and browser-visible review records.
 
 The project is designed for teams that need auditable decision support without sending private context to an external memory service. The open-source engine runs locally today, while the v0.3.0 product layer defines how it can become a common-user SaaS with a dashboard, guided workflows, templates, exports, and team review.
 
@@ -12,7 +12,7 @@ In plain language, Cognition Store helps people keep a clean record of important
 
 The SaaS direction is built for users who do not want a command line:
 
-- create a workspace from a browser
+- create a workspace from a browser through the local dashboard
 - paste or upload notes
 - choose a simple template
 - save memory records
@@ -46,6 +46,8 @@ See [docs/common-user-onboarding.md](docs/common-user-onboarding.md) and the sta
 - Runs bounded simulations for buyer committees, market-risk analysis, and task-completion learning.
 - Writes immutable action logs and JSON verdict reports.
 - Keeps approval-sensitive actions as drafts only.
+- Serves a local full-stack dashboard and JSON API without third-party runtime
+  dependencies.
 
 ## Memory Architecture
 
@@ -113,6 +115,21 @@ python3 -m cognition_store.cli runtime-complete "Delivered local task. Verified 
 ```
 
 Captures a completed task summary into evidence, claims, lessons, approval drafts, a knowledge graph, an immutable action log, and a verdict.
+
+Run the full-stack dashboard and API:
+
+```bash
+python3 -m cognition_store.cli serve --host 127.0.0.1 --port 8765 --output artifacts/runs
+```
+
+Open `http://127.0.0.1:8765` to create memory records, run demos, inspect
+workspace metrics, and review generated artifacts. The local API exposes:
+
+- `GET /api/health`
+- `GET /api/runs`
+- `POST /api/records`
+- `POST /api/agentshield-demo`
+- `POST /api/energy-demo`
 
 ## Output Structure
 
